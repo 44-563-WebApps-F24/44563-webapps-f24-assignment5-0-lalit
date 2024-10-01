@@ -13,6 +13,23 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Dessert Options</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="basic.html">Basic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="advanced.html">Advanced</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
     <header class="text-center">
         <h1><b>After Dinner Hosted by Lalit Kumar</b></h1>
     </header>
@@ -108,18 +125,15 @@
     </div>
     <div class="container mt-5">
       <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <!-- First Group (Success Buttons) -->
         <div class="btn-group me-2" role="group" aria-label="First group">
           <button type="button" class="btn btn-success">I</button>
           <button type="button" class="btn btn-success">A</button>
           <button type="button" class="btn btn-success">R</button>
         </div>
-        <!-- Second Group (Alert Buttons) -->
         <div class="btn-group me-2" role="group" aria-label="Second group">
           <button type="button" class="btn btn-warning">U</button>
           <button type="button" class="btn btn-warning">M</button>
         </div>
-        <!-- Third Group (Danger Button) -->
         <div class="btn-group" role="group" aria-label="Third group">
           <button type="button" class="btn btn-danger">K</button>
         </div>
@@ -133,6 +147,65 @@
         <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
         <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
       </ul>
-    </div>    
+    </div>  
+    <form class="container mt-5">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="dessert">Dessert</label>
+        <input type="text" class="form-control" id="dessert" placeholder="Enter your dessert">
+      </div>
+
+      <div class="form-check mt-3">
+        <input type="checkbox" class="form-check-input" id="newsletter">
+        <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+      </div>
+    
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+      
+    <div class="container mt-2">
+      <div class="row">
+        
+          <div class="col-sm-4">
+              <div class="card">
+                  <img src="ApplePie.jpg" class="card-img-top" alt="Apple Pie">
+                  <div class="card-body">
+                      <h5 class="card-title">Apple Pie</h5>
+                      <p class="card-text">Apple pie is a classic dessert with a buttery crust and spiced apple filling, often served with whipped cream or ice cream.</p>
+                      <a href="https://en.wikipedia.org/wiki/Apple_pie" class="btn btn-primary" target="_blank">Learn more</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-4">
+              <div class="card">
+                  <img src="IceCream.jpg" class="card-img-top" alt="Ice Cream">
+                  <div class="card-body">
+                      <h5 class="card-title">Ice Cream</h5>
+                      <p class="card-text">Ice cream is a popular frozen dessert made from dairy products, sweetened and often flavored with ingredients like vanilla or chocolate.</p>
+                      <a href="https://en.wikipedia.org/wiki/Ice_cream" class="btn btn-primary" target="_blank">Learn more</a>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-4">
+              <div class="card">
+                  <img src="RedVelvet.jpg" class="card-img-top" alt="Red Velvet Cake">
+                  <div class="card-body">
+                      <h5 class="card-title">Red Velvet Cake</h5>
+                      <p class="card-text">Red velvet cake is a soft and moist dessert, known for its striking red color, mild cocoa flavor, and cream cheese frosting.</p>
+                      <a href="https://en.wikipedia.org/wiki/Red_velvet_cake" class="btn btn-primary" target="_blank">Learn more</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+    
 </body>
 </html>
